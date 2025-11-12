@@ -7,6 +7,74 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Felhasználókezelés" 
+               HorizontalAlignment="Center" 
+               Margin="0,26,0,0" 
+               VerticalAlignment="Top"
+               FontSize="19"
+               FontWeight="Bold"/>
+        <Label Content="Regisztráció" 
+               HorizontalAlignment="Left" 
+               Margin="100,90,0,0" 
+               VerticalAlignment="Top"
+               FontSize="18"
+               FontWeight="Black"/>
+        <TextBox HorizontalAlignment="Left"
+                 x:Name="felhasznalonev"
+                 Margin="80,165,0,0" 
+                 TextWrapping="Wrap" 
+                 BorderBrush="Blue"
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="155" Height="25"
+                 FontSize="14"
+                 VerticalContentAlignment="Center"/>
+        <Label Content="Felhasználónév" 
+            HorizontalAlignment="Left" 
+            Margin="80,135,0,0" 
+            VerticalAlignment="Top"
+            FontSize="15"
+            FontWeight="Bold"
+            VerticalContentAlignment="Center"/>
+        <Label Content="Jelszó" 
+            HorizontalAlignment="Left" 
+            Margin="80,196,0,0" 
+            VerticalAlignment="Top"
+            FontSize="15"
+            FontWeight="Bold"
+            VerticalContentAlignment="Center"/>
+        <PasswordBox HorizontalAlignment="Left" 
+                     x:Name="Pass"
+                     Margin="82,231,0,0" 
+                     VerticalAlignment="Top" 
+                     Width="155"
+                     BorderBrush="Blue"
+                     Height="25"/>
+        <Label Content="Jelszó újra" 
+            HorizontalAlignment="Left" 
+            Margin="80,256,0,0" 
+            VerticalAlignment="Top"
+            FontSize="15"
+            FontWeight="Bold"
+            VerticalContentAlignment="Center"/>
+        <PasswordBox HorizontalAlignment="Left" 
+                     x:Name="PassAgain"
+            Margin="82,286,0,0" 
+            VerticalAlignment="Top" 
+            Width="155"
+            BorderBrush="Blue"
+            Height="25"/>
+        <Button Content="Regisztráció" 
+                HorizontalAlignment="Left" 
+                Margin="106,338,0,0" 
+                VerticalAlignment="Top" Height="35" Width="113"
+                FontSize="15"
+                x:Name="RegButton" Click="RegButton_Click"
+                />
+        <DataGrid x:Name="Lista"
+          Margin="400,78,10,10"
+          AutoGenerateColumns="True"
+          IsReadOnly="True"/>
+
     </Grid>
 </Window>
